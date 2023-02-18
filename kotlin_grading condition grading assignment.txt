@@ -1,0 +1,19 @@
+//grade point using readline
+
+fun main(args: Array<String>){
+    print("\n Enter grade point: ")
+    val input = readLine()!!
+    var grade_point: Float = input.toFloat()
+
+    if(grade_point>=4.4 && grade_point<=5.0) {
+        println(" Grade point: $grade_point" + "\n Grade: First class")
+    }else if(grade_point>=3.6 && grade_point<=4.39) {
+        println(" Grade point: $grade_point" + "\n Grade: Second class upper")
+    }else if(grade_point>=2.8 && grade_point<=3.59) {
+        println(" Grade point: $grade_point" + "\n Grade: Second class lower")
+    }else if(grade_point>=2.0 && grade_point<=2.79) {
+        println(" Grade point: $grade_point" + "\n Grade: Third class")
+    }else{
+        println("Grade point: $grade_point" + "\n Grade: Pass")
+    }
+}
